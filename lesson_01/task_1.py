@@ -10,15 +10,15 @@
 """
 
 from ipaddress import ip_address
-from subprocess import Popen, PIPE
+from subprocess import PIPE, call, DEVNULL
 from socket import gethostbyname, gaierror
 
 
-def host_ping(list_ip_addresses, timeout=500, requests=1):
+def host_ping(list_ip_addresses, timeout=1, requests=1):
     """
     Функция проверяет доступность сетевых узлов
     :param list_ip_addresses: список ip адресов и доменных имён
-    :param timeout: таймаут запросов, 500 = 0.5 сек
+    :param timeout: таймаут запросов, 1 сек
     :param requests: количество запросов
     :return []: возврат словаря с доступными и недоступными узлами
     """
@@ -29,9 +29,9 @@ def host_ping(list_ip_addresses, timeout=500, requests=1):
         # обойдем такие исключения
         except ValueError:
             address = get_host_by_name(address, get_ip_address=True)
-        process = Popen(f"ping {address} -w {timeout} -n {requests}", shell=False, stdout=PIPE)
+        process = call(f"ping {address} -w {timeout} -c {requests}", shell=True, stdout=PIPE, stderr=DEVNULL)
         # проверяем код завершения подпроцесса
-        if process.returncode == 0:
+        if process == 0:
             results['Доступные узлы'] += f"{str(address)}\n"
             result_string = f'{address} - Узел доступен'
         else:
