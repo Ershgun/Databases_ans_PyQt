@@ -1,0 +1,67 @@
+2021-04-12 22:57:28,466 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2021-04-12 22:57:28,493 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2021-04-12 22:57:28,498 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2021-04-12 22:57:28,510 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2021-04-12 22:57:28,524 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2021-04-12 22:57:28,528 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
+2021-04-12 22:57:28,596 INFO transport.py Попытка подключения №1
+2021-04-12 22:57:28,612 INFO transport.py Попытка подключения №1
+2021-04-12 22:57:28,616 INFO transport.py Попытка подключения №1
+2021-04-12 22:57:29,597 INFO transport.py Попытка подключения №2
+2021-04-12 22:57:29,614 INFO transport.py Попытка подключения №2
+2021-04-12 22:57:29,617 INFO transport.py Попытка подключения №2
+2021-04-12 22:57:30,598 INFO transport.py Попытка подключения №3
+2021-04-12 22:57:30,598 DEBUG transport.py Установлено соединение с сервером
+2021-04-12 22:57:30,598 DEBUG transport.py Сформировано presence сообщение для пользователя test1
+2021-04-12 22:57:30,599 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37332), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1618257450.5988533, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2021-04-12 22:57:30,614 INFO transport.py Попытка подключения №3
+2021-04-12 22:57:30,614 DEBUG transport.py Установлено соединение с сервером
+2021-04-12 22:57:30,614 DEBUG transport.py Сформировано presence сообщение для пользователя test2
+2021-04-12 22:57:30,615 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37334), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1618257450.6148455, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2021-04-12 22:57:30,618 INFO transport.py Попытка подключения №3
+2021-04-12 22:57:30,618 DEBUG transport.py Установлено соединение с сервером
+2021-04-12 22:57:30,618 DEBUG transport.py Сформировано presence сообщение для пользователя test3
+2021-04-12 22:57:30,619 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37336), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1618257450.6187606, 'user': {'account_name': 'test3'}}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2021-04-12 22:57:30,620 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37332), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2021-04-12 22:57:30,620 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2021-04-12 22:57:30,620 INFO transport.py Соединение с сервером успешно установлено.
+2021-04-12 22:57:30,620 DEBUG transport.py Запрос списка известных пользователей test1
+2021-04-12 22:57:30,620 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37332), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1618257450.620376, 'account_name': 'test1'}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2021-04-12 22:57:30,638 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37334), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2021-04-12 22:57:30,638 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2021-04-12 22:57:30,638 INFO transport.py Соединение с сервером успешно установлено.
+2021-04-12 22:57:30,638 DEBUG transport.py Запрос списка известных пользователей test2
+2021-04-12 22:57:30,638 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37334), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1618257450.6383119, 'account_name': 'test2'}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2021-04-12 22:57:30,639 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37332), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2021-04-12 22:57:30,651 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2021-04-12 22:57:30,652 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1618257450.652086, 'user': 'test1'}
+2021-04-12 22:57:30,652 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37332), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1618257450.652086, 'user': 'test1'}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2021-04-12 22:57:30,662 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37336), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2021-04-12 22:57:30,662 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2021-04-12 22:57:30,662 INFO transport.py Соединение с сервером успешно установлено.
+2021-04-12 22:57:30,662 DEBUG transport.py Запрос списка известных пользователей test3
+2021-04-12 22:57:30,662 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37336), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1618257450.6622856, 'account_name': 'test3'}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2021-04-12 22:57:31,165 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37332), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2021-04-12 22:57:31,165 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2021-04-12 22:57:31,166 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2021-04-12 22:57:31,167 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37334), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2021-04-12 22:57:31,168 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37336), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2021-04-12 22:57:31,180 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2021-04-12 22:57:31,180 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1618257451.180208, 'user': 'test2'}
+2021-04-12 22:57:31,180 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37334), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1618257451.180208, 'user': 'test2'}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2021-04-12 22:57:31,181 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2021-04-12 22:57:31,181 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1618257451.1817884, 'user': 'test3'}
+2021-04-12 22:57:31,182 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37336), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1618257451.1817884, 'user': 'test3'}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2021-04-12 22:57:31,671 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37334), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2021-04-12 22:57:31,671 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2021-04-12 22:57:31,671 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2021-04-12 22:57:31,673 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37336), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2021-04-12 22:57:31,674 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2021-04-12 22:57:31,674 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2021-04-12 22:57:44,424 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37334), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1618257464.422965, 'account_name': 'test2'}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции transport.transport_shutdown().Вызов из функции transport_shutdown
+2021-04-12 22:57:44,424 DEBUG transport.py Транспорт завершает работу.
+2021-04-12 22:57:44,717 DEBUG transport.py Потеряно соединение с сервером.
+2021-04-12 22:57:46,183 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37332), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1618257465.8231072, 'account_name': 'test1'}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции transport.transport_shutdown().Вызов из функции transport_shutdown
+2021-04-12 22:57:46,184 DEBUG transport.py Транспорт завершает работу.
+2021-04-12 22:57:48,241 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37336), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1618257468.0309553, 'account_name': 'test3'}), {}. Вызов из модуля lesson_05.common.utils.Вызов из функции transport.transport_shutdown().Вызов из функции transport_shutdown
+2021-04-12 22:57:48,241 DEBUG transport.py Транспорт завершает работу.
